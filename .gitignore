@@ -32,3 +32,18 @@ logs/
 *.swp
 *~
 .vscode/
+# rootfs
+rootfs-*
+
+# build
+*.o
+*.ko
+*.mod
+*.symvers
+*.order
+
+# binaries
+engine
+cpu_hog
+memory_hog
+io_pulse
