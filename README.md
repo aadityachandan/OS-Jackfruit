@@ -278,3 +278,4 @@ Both containers reported progress at each elapsed second (1–15) and finished t
 The scheduling difference is reflected in accumulator values: `cpu1` completes more loop iterations per real second than `cpu2` would under CPU pressure. On a real multi-core machine with competing load, `cpu1` would finish a fixed-work benchmark noticeably faster than `cpu2` due to its larger CFS weight.
 
 **Conclusion:** Linux CFS correctly deprioritises `cpu2` (nice=10) relative to `cpu1` (nice=0). The nice value mechanism offers a straightforward, effective means of biasing CPU allocation without hard constraints, in line with CFS's proportional fairness model.
+Added by Akshay
